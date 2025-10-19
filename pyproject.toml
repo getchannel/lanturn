@@ -1,0 +1,15 @@
+[project]
+name = "lanturn"
+version = "0.1.0"
+description = "Lantern - Gemini Live AI on ESP32 Atoms3r-CAM"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pipecat-ai[google,silero,daily,webrtc]>=0.0.90",
+    "pipecat-ai-small-webrtc-prebuilt>=0.1.0",
+    "python-dotenv>=1.0.0",
+    "loguru>=0.7.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "pillow>=11.3.0",
+]
