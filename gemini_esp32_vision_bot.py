@@ -41,7 +41,7 @@ transport_params = {
         audio_in_enabled=True,
         audio_out_enabled=True,
         video_in_enabled=True,  # Enable video input for camera frames
-        video_out_enabled=False,  # We don't send video back to ESP32
+        video_out_enabled=True,  # Must be True to accept ESP32's sendrecv SDP (even though we won't send video)
         # set stop_secs to something roughly similar to the internal setting
         # of the Multimodal Live api, just to align events.
         vad_analyzer=SileroVADAnalyzer(params=VADParams(stop_secs=0.5)),

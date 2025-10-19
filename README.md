@@ -238,3 +238,11 @@ This hackathon project is provided as-is for educational purposes.
 ---
 
 **Made with ❤️ for the Google + Pipecat Hackathon**
+
+
+Server Start:
+uv run python gemini_esp32_vision_bot.py -t webrtc --esp32 --host 192.168.0.138
+
+ESP32 Start:
+cd /Users/petermcgrath/lanturn/esp32/pipecat-esp32/esp32-m5stack-atoms3r
+idf.py build flash monitor
