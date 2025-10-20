@@ -209,7 +209,7 @@ BSD 2-Clause; see `LICENSE`.
 - **Project**: Lanturn
 - **Goal**: Voice + Vision AI on ESP32 embedded hardware
 - **Stack**: ESP32 Atoms3R-CAM + Pipecat + Gemini Live
-- **Status**: ✅ Functional prototype with voice + vision
+- **Status**: Functional prototype with voice (vision not working yet)
 - **Sponsor**: Google and Pipecat hackathon
 
 ---
