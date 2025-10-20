@@ -1,4 +1,4 @@
-# Lanturn 🏮 (Work in Progress)
+# Lanturn 🔦 (Work in Progress)
 
 A hackathon project connecting the Gemini Live API to an ESP32 Atoms3r-CAM device for **voice + vision** conversations on embedded hardware.
 
