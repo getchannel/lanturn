@@ -1,0 +1,16 @@
+set(PEER_PROJECT_PATH "../../deps/libpeer")
+file(GLOB CODES "${PEER_PROJECT_PATH}/src/*.c")
+
+idf_component_register(
+  SRCS ${CODES}
+  INCLUDE_DIRS "${PEER_PROJECT_PATH}/src"
+  REQUIRES mbedtls srtp json esp_netif
+)
+
+if(NOT IDF_TARGET STREQUAL linux)
+  add_definitions("-DESP32 -DCONFIG_USE_LWIP=1 -DCONFIG_AUDIO_BUFFER_SIZE=8096 -DCONFIG_DATA_BUFFER_SIZE=102400 -D__BYTE_ORDER=__LITTLE_ENDIAN")
+endif()
+
+# Force ECDSA, because aiortc doesn't want to use RSA.
+# Disable KeepAlives
+add_definitions("-DHTTP_DO_NOT_USE_CUSTOM_CONFIG -DMQTT_DO_NOT_USE_CUSTOM_CONFIG -DCONFIG_DTLS_USE_ECDSA=1 -DCONFIG_USE_USRSCTP=0 -DDISABLE_PEER_SIGNALING=0 -DCONFIG_KEEPALIVE_TIMEOUT=0")
