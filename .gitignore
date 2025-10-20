@@ -1,3 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.coverage
+*.log
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Environment files
+.env
+.env.*
+
+# Builds/artifacts
+build/
+dist/
+
+# ESP-IDF / ESP32
+esp-idf/
+esp32/**/build/
+esp32/**/.pio/
+esp32/**/.cache/
+esp32/**/sdkconfig
+esp32/**/sdkconfig.old
+esp32/**/dependencies.lock
+
+# WebRTC prebuilt caches (if any)
+.smallwebrtc/
+.smallwebrtc-cache/
 # Python-generated files
 __pycache__/
 *.py[oc]
