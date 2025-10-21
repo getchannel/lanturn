@@ -27,7 +27,7 @@ int pipecat_camera_init_gc0308(void) {
 
   camera_config_t config = {};
   // Pin map per M5 AtomS3R-CAM docs (GC0308)
-  config.pin_pwdn = 18;   // POWER_N
+  config.pin_pwdn = -1;   // no PWDN pin (GPIO18 is external power enable, not sensor PWDN)
   config.pin_reset = -1;  // not exposed
   config.pin_xclk = 21;   // XCLK
   config.pin_sccb_sda = 12;  // CAM_SDA

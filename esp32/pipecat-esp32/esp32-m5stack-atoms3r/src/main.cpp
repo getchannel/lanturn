@@ -18,6 +18,15 @@ extern "C" void app_main(void) {
 
   ESP_ERROR_CHECK(esp_event_loop_create_default());
   peer_init();
+  
+  // Initialize camera first (powers on camera module)
+  int camera_result = pipecat_camera_init_gc0308();
+  if (camera_result != 0) {
+    ESP_LOGE(LOG_TAG, "Camera initialization failed!");
+  } else {
+    ESP_LOGI(LOG_TAG, "Camera initialized successfully");
+  }
+  
   pipecat_init_audio_capture();
   pipecat_init_audio_decoder();
   pipecat_init_wifi();

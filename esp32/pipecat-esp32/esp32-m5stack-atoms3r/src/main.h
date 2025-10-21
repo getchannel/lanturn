@@ -8,6 +8,9 @@
 // Wifi
 extern void pipecat_init_wifi();
 
+// Camera
+extern int pipecat_camera_init_gc0308();
+
 // WebRTC / Media
 extern void pipecat_init_audio_capture();
 extern void pipecat_init_audio_decoder();
