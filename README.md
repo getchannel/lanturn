@@ -2,7 +2,7 @@
 
 A hackathon project connecting the Gemini Live API to an ESP32 Atoms3r-CAM device for **voice + vision** conversations on embedded hardware.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D_ePb6xipc4?si=evdlVkB2xFcOqGcV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://youtu.be/D_ePb6xipc4?si=MGE_raCarrpGCfHD
 
 ## Overview
 
